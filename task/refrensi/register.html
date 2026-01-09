@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Barkasiwa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGO -->
+<div class="logo-container">
+    <h1 class="logo">Barkasiwa</h1>
+</div>
+
+<!-- REGISTER CARD -->
+<div class="register-container">
+
+    <h2>Create a new account</h2>
+    <p class="subtitle">Marketplace barang bekas khusus mahasiswa</p>
+
+    <form method="POST" action="register.php">
+
+        <!-- NAMA -->
+        <label>Nama Lengkap</label>
+        <input 
+            type="text" 
+            name="nama" 
+            placeholder="Nama lengkap" 
+            required
+        >
+
+        <!-- ASAL KAMPUS -->
+        <label>Asal Kampus</label>
+        <input 
+            type="text" 
+            name="asal_kampus" 
+            placeholder="Contoh: Universitas Amikom Purwokerto" 
+            required
+        >
+
+        <!-- EMAIL -->
+        <label>Email</label>
+        <input 
+            type="email" 
+            name="email" 
+            placeholder="Email mahasiswa" 
+            required
+        >
+
+        <!-- PASSWORD -->
+        <label>Password</label>
+        <input 
+            type="password" 
+            name="password" 
+            placeholder="Password" 
+            required
+        >
+
+        <!-- INFO -->
+        <p class="info-text">
+            Dengan mendaftar, Anda menyetujui syarat dan ketentuan Barkasiwa.
+        </p>
+
+        <!-- BUTTON -->
+        <button type="submit" class="btn-register">Sign Up</button>
+
+    </form>
+
+    <a href="login.html" class="login-link">
+        Already have an account?
+    </a>
+
+</div>
+
+</body>
+</html>

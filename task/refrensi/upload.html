@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Barang | Barkasiwa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">Barkasiwa</h1>
+</header>
+
+<main class="form-container">
+    <h2>Jual Barang</h2>
+
+        <form 
+        method="POST" 
+        action="upload.php"
+        enctype="multipart/form-data">
+        <label>Nama Barang</label>
+        <input type="text" name="nama_barang" required>
+
+        <label>Kategori</label>
+        <select name="kategori">
+            <option>Elektronik</option>
+            <option>Fashion</option>
+            <option>Buku</option>
+            <option>Peralatan Kos</option>
+            <option>Lainnya</option>
+        </select>
+
+        <label>Harga</label>
+        <input type="number" name="harga" required>
+
+        <label>Deskripsi</label>
+        <textarea name="deskripsi"></textarea>
+
+        <label>Foto Barang</label>
+        <input type="file" name="foto">
+
+        <button type="submit">Upload Barang</button>
+    </form>
+
+</main>
+
+</body>
+</html>

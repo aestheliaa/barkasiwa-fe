@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Barang | Barkasiwa</title>
+    <link rel="stylesheet" href=".css">
+</head>
+<body>
+
+<header class="navbar">
+    <h1 class="logo">Barkasiwa</h1>
+</header>
+
+<main class="detail-container">
+
+    <!-- Foto Produk -->
+    <div class="detail-image">
+        <img src="assets/img/barang/contoh.jpg" alt="Foto Barang">
+    </div>
+
+    <!-- Informasi Produk -->
+    <div class="detail-info">
+        <h2 id="namaBarang">Nama Barang</h2>
+        <p class="price" id="hargaBarang">Rp 0</p>
+
+        <p class="description" id="deskripsiBarang">
+            Deskripsi barang akan ditampilkan di sini.
+        </p>
+
+        <button class="contact-btn">Hubungi Penjual</button>
+    </div>
+
+</main>
+
+</body>
+</html>

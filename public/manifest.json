@@ -1,0 +1,80 @@
+{
+  "name": "Barkasiwa - Marketplace Kampus",
+  "short_name": "Barkasiwa",
+  "description": "Platform jual beli barang bekas khusus mahasiswa. Temukan dan jual barang berkualitas dengan mudah.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#1e4fa1",
+  "orientation": "portrait-primary",
+  "dir": "ltr",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["shopping", "marketplace", "lifestyle"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Lihat Produk",
+      "short_name": "Produk",
+      "description": "Browse semua produk yang tersedia",
+      "url": "/products",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Jual Barang",
+      "short_name": "Jual",
+      "description": "Jual barang bekas kamu",
+      "url": "/dashboard/products/new",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Wishlist",
+      "short_name": "Wishlist",
+      "description": "Lihat produk favorit kamu",
+      "url": "/dashboard/wishlist",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}

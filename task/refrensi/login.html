@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Log in to Barkasiwa</h2>
+
+        <form action="login.php" method="POST">
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    name="email" 
+                    placeholder="Email address or mobile number">
+            </div>
+
+            <div class="form-group">
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Log in</button>
+            </div>
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Forgotten password?</a>
+        </div>
+
+        <div class="create-account">
+            <a href="register.html" class="btn-create-account">
+                Create new account
+            </a>
+        </div>
+    </div>
+</body>
+</html>
