@@ -76,8 +76,15 @@ export class ApiClient {
   }
 
   // Products
-  async getProducts(): Promise<ProductWithSeller[]> {
-    return this.request<ProductWithSeller[]>('/api/products');
+  async getProducts(search?: string, category?: number): Promise<ProductWithSeller[]> {
+    const params = new URLSearchParams();
+    if (search) params.append('search', search);
+    if (category) params.append('category', category.toString());
+    
+    const queryString = params.toString();
+    const endpoint = queryString ? `/api/products?${queryString}` : '/api/products';
+    
+    return this.request<ProductWithSeller[]>(endpoint);
   }
 
   async getProduct(id: number): Promise<ProductDetail> {
